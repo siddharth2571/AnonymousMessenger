@@ -36,7 +36,7 @@ public class CustomFontUtils {
             }
         }
         //if more than one font use in single application at that time add more else if
-        else if (fontName.contentEquals(context.getString(R.string.Variane))) {
+        else if (fontName.contentEquals(context.getString(R.string.orkney))) {
             switch (textStyle) {
                 case 1: // bold
                     return FontCache.getTypeface("orkney_bold.otf", context);

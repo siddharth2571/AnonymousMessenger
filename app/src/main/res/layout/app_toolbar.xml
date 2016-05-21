@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#99000000"
+    android:minHeight="?attr/actionBarSize"
+    android:title="Meaning"
+    android:titleTextColor="@color/md_white_1000"
+    app:navigationIcon="@mipmap/ic_launcher">
+
+
+    <com.ac.anonymousmessenger.customfont.CustomeTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="Anonymous Messenger"
+        android:textColor="@color/md_white_1000"
+        android:textSize="40dp"
+        app:font="@string/Variane" />
+
+</android.support.v7.widget.Toolbar>
