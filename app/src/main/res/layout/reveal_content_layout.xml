@@ -90,7 +90,7 @@
                         android:id="@+id/btn_1000"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/btn_size"
-                       android:layout_weight="1"
+                        android:layout_weight="1"
                         android:gravity="right"
                         android:padding="10dp"
                         app:fb_defaultColor="@color/md_amber_500"
