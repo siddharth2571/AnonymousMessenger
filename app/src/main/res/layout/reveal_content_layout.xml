@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <android.support.v7.widget.CardView
             android:id="@+id/card_view"
             android:layout_width="fill_parent"
@@ -18,21 +19,26 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/backshape"
-            android:minHeight="300dp"
+            android:minHeight="200dp"
             app:cardBackgroundColor="#65000000"
             app:cardCornerRadius="8dp"
             app:contentPadding="10dp">
 
-            <com.ac.anonymousmessenger.customfont.CustomeTextView
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:maxLines="7"
-                android:text="Test"
-                android:textColor="@color/md_grey_200"
-                android:textSize="40dp"
-                app:font="@string/orkney" />
+                android:layout_height="match_parent">
 
+                <com.ac.anonymousmessenger.customfont.CustomeTextView
+                    android:id="@+id/outputEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    android:text="This is Unique Idea. Try To understand Than Use easily, \nEnjoy,Fun"
+                    android:textColor="@color/md_grey_200"
+                    android:textSize="25dp"
+                    app:font="@string/orkney" />
+            </ScrollView>
         </android.support.v7.widget.CardView>
 
     </io.codetail.widget.RevealFrameLayout>
@@ -51,7 +57,7 @@
             android:background="@drawable/backshape"
             android:minHeight="300dp"
             android:visibility="invisible"
-            app:cardBackgroundColor="#ffffff"
+            app:cardBackgroundColor="#AAffffff"
             app:cardCornerRadius="8dp"
             app:contentPadding="10dp">
 
@@ -61,26 +67,59 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:weightSum="2">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
                     android:layout_margin="5dp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:weightSum="3">
 
-                    <mehdi.sakout.fancybuttons.FancyButton
+                    <com.ac.anonymousmessenger.customfont.CustomeTextView
+                        android:id="@+id/txt_500"
+                        style="@style/ValueText"
+                        android:background="@drawable/btn_color"
+                        android:text="500"
+                        android:textColor="@android:color/white"
+
+                        app:font="@string/orkney" />
+
+                    <com.ac.anonymousmessenger.customfont.CustomeTextView
+                        android:id="@+id/txt_1000"
+                        style="@style/ValueText"
+                        android:background="@drawable/btn_color1"
+                        android:text="1000"
+
+                        android:textColor="@android:color/white"
+
+                        app:font="@string/orkney" />
+
+                    <com.ac.anonymousmessenger.customfont.CustomeTextView
+                        android:id="@+id/txt_2000"
+                        style="@style/ValueText"
+                        android:background="@drawable/btn_color2"
+                        android:text="2000"
+
+                        android:textColor="@android:color/white"
+
+                        app:font="@string/orkney" />
+
+
+                    <!--<mehdi.sakout.fancybuttons.FancyButton
                         android:id="@+id/btn_500"
-                        android:layout_width="0dp"
+                        android:layout_width="10dp"
                         android:layout_height="@dimen/btn_size"
                         android:layout_weight="1"
                         android:gravity="right"
                         android:padding="0dp"
+                        android:visibility="gone"
                         app:fb_defaultColor="@color/md_deep_purple_500"
                         app:fb_focusColor="#2e5071"
-                        app:fb_fontIconSize="35dp"
+                        app:fb_fontIconSize="20dp"
                         app:fb_iconPosition="right"
                         app:fb_radius="40dp"
                         app:fb_text="500"
@@ -114,66 +153,94 @@
                         app:fb_iconPosition="right"
                         app:fb_radius="100dp"
                         app:fb_text="1500"
-                        app:fb_textColor="#ffffff" />
+                        app:fb_textColor="#ffffff" />-->
 
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
                     android:layout_margin="5dp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp"
+                    android:orientation="vertical"
                     android:weightSum="3">
 
-                    <mehdi.sakout.fancybuttons.FancyButton
-                        android:id="@+id/btn_2000"
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/btn_size"
-                        android:layout_weight="1"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        app:fb_defaultColor="@color/md_deep_purple_A700"
-                        app:fb_focusColor="#2e5071"
-                        app:fb_fontIconSize="25dp"
-                        app:fb_iconPosition="right"
-                        app:fb_radius="100dp"
-                        app:fb_text="2000"
-                        app:fb_textColor="#ffffff" />
 
-                    <mehdi.sakout.fancybuttons.FancyButton
-                        android:id="@+id/btn_3000"
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/btn_size"
-                        android:layout_weight="1"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        app:fb_defaultColor="@color/md_red_A400"
+                    <com.ac.anonymousmessenger.customfont.CustomeTextView
+                        android:id="@+id/txt_3000"
+                        style="@style/ValueText"
+                        android:background="@drawable/btn_color3"
+                        android:text="3000"
 
-                        app:fb_focusColor="#2e5071"
-                        app:fb_fontIconSize="25dp"
-                        app:fb_iconPosition="right"
-                        app:fb_radius="100dp"
-                        app:fb_text="3000"
-                        app:fb_textColor="#ffffff" />
+                        android:textColor="@android:color/white"
 
-                    <mehdi.sakout.fancybuttons.FancyButton
-                        android:id="@+id/btn_5000"
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/btn_size"
-                        android:layout_marginRight="@dimen/btn_margin"
-                        android:layout_weight="1"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        app:fb_defaultColor="@color/md_red_900"
-                        app:fb_focusColor="#2e5071"
-                        app:fb_fontIconSize="25dp"
-                        app:fb_iconPosition="right"
-                        app:fb_radius="100dp"
-                        app:fb_text="5000"
-                        app:fb_textColor="#ffffff" />
+                        app:font="@string/orkney" />
+
+                    <com.ac.anonymousmessenger.customfont.CustomeTextView
+                        android:id="@+id/txt_4000"
+                        style="@style/ValueText"
+                        android:background="@drawable/btn_color4"
+                        android:text="4000"
+                        android:textColor="@android:color/white"
+
+                        app:font="@string/orkney" />
+
+                    <com.ac.anonymousmessenger.customfont.CustomeTextView
+                        android:id="@+id/txt_5000"
+                        style="@style/ValueText"
+                        android:background="@drawable/btn_color5"
+                        android:text="5000"
+                        android:textColor="@android:color/white"
+                        app:font="@string/orkney" />
+
+                    <!-- <mehdi.sakout.fancybuttons.FancyButton
+                         android:id="@+id/btn_2000"
+                         android:layout_width="0dp"
+                         android:layout_height="@dimen/btn_size"
+                         android:layout_weight="1"
+                         android:gravity="right"
+                         android:padding="10dp"
+                         app:fb_defaultColor="@color/md_deep_purple_A700"
+                         app:fb_focusColor="#2e5071"
+                         app:fb_fontIconSize="25dp"
+                         app:fb_iconPosition="right"
+                         app:fb_radius="100dp"
+                         app:fb_text="2000"
+                         app:fb_textColor="#ffffff" />
+
+                     <mehdi.sakout.fancybuttons.FancyButton
+                         android:id="@+id/btn_3000"
+                         android:layout_width="0dp"
+                         android:layout_height="@dimen/btn_size"
+                         android:layout_weight="1"
+                         android:gravity="right"
+                         android:padding="10dp"
+                         app:fb_defaultColor="@color/md_red_A400"
+
+                         app:fb_focusColor="#2e5071"
+                         app:fb_fontIconSize="25dp"
+                         app:fb_iconPosition="right"
+                         app:fb_radius="100dp"
+                         app:fb_text="3000"
+                         app:fb_textColor="#ffffff" />
+
+                     <mehdi.sakout.fancybuttons.FancyButton
+                         android:id="@+id/btn_5000"
+                         android:layout_width="0dp"
+                         android:layout_height="@dimen/btn_size"
+                         android:layout_marginRight="@dimen/btn_margin"
+                         android:layout_weight="1"
+                         android:gravity="right"
+                         android:padding="10dp"
+                         app:fb_defaultColor="@color/md_red_900"
+                         app:fb_focusColor="#2e5071"
+                         app:fb_fontIconSize="25dp"
+                         app:fb_iconPosition="right"
+                         app:fb_radius="100dp"
+                         app:fb_text="5000"
+                         app:fb_textColor="#ffffff" />-->
 
                 </LinearLayout>
 

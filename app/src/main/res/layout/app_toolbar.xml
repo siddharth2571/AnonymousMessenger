@@ -5,10 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:background="#99000000"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
     android:minHeight="?attr/actionBarSize"
     android:title="Meaning"
-    android:titleTextColor="@color/md_white_1000"
-    app:navigationIcon="@mipmap/ic_launcher">
+    android:titleTextColor="@color/md_white_1000">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="60dp"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="5dp"
+        android:src="@drawable/toolbar_img" />
 
 
     <com.ac.anonymousmessenger.customfont.CustomeTextView
@@ -17,7 +24,7 @@
         android:gravity="center_vertical"
         android:text="Anonymous Messenger"
         android:textColor="@color/md_white_1000"
-        android:textSize="40dp"
+        android:textSize="30dp"
         app:font="@string/Variane" />
 
 </android.support.v7.widget.Toolbar>
